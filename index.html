@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master AI — Local-First Agent Stack</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container { max-width: 760px; text-align: center; }
+    .logo { font-size: 1rem; letter-spacing: 0.3em; color: #1a7a3a; text-transform: uppercase; margin-bottom: 1.5rem; }
+    h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; }
+    h1 span { color: #1a7a3a; }
+    .tagline { font-size: 1.25rem; color: #999; margin-bottom: 2.5rem; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 1.25rem;
+      text-align: left;
+    }
+    .card h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: #1a7a3a; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: #aaa; line-height: 1.5; }
+    .cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.8; }
+    .btn-primary { background: #1a7a3a; color: #fff; }
+    .btn-secondary { background: #111; border: 1px solid #333; color: #ccc; }
+    footer { margin-top: 4rem; font-size: 0.8rem; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Master AI</div>
+    <h1>Your machine.<br><span>Your agent.</span></h1>
+    <p class="tagline">
+      Local-first AI agent stack built on Claude. Browser automation,<br>
+      MCP integration, and multi-model routing — all running on your hardware.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Local-First</h3>
+        <p>Runs on your machine. No cloud required. Ollama-powered with optional cloud escalation.</p>
+      </div>
+      <div class="card">
+        <h3>MCP Native</h3>
+        <p>Full Model Context Protocol integration. Browser, filesystem, calendar, email — wired in.</p>
+      </div>
+      <div class="card">
+        <h3>Built on Claude</h3>
+        <p>Anthropic's Claude API at the core. Smart routing between local and cloud models.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a href="https://github.com/ebey317/claf" class="btn btn-primary">View on GitHub</a>
+      <a href="mailto:ebey317@gmail.com" class="btn btn-secondary">Contact</a>
+    </div>
+    <footer>© 2026 Master AI · Indianapolis, IN · Built by Elijah Wilkins</footer>
+  </div>
+</body>
+</html>
