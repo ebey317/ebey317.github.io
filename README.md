@@ -12,7 +12,7 @@ Personal portfolio and landing page hosted via GitHub Pages. Showcases local-fir
 
 - [CLAF](https://github.com/ebey317/claf) — Closed-Loop Agent Framework
 - [AI Controller](https://github.com/ebey317/ai-controller-profile) — Xbox controller to keyboard/mouse/voice
-- [Fair Chance](https://github.com/ebey317/fairchance) — Job pipeline for fair-chance employers
+- Fair Chance (private build) — Job pipeline for fair-chance employers
 
 ## Tech
 
