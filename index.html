@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master AI — Local-First Agent Stack</title>
+  <title>Elijah Wilkins — Applied AI Engineer</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -14,66 +14,142 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       padding: 2rem;
     }
-    .container { max-width: 760px; text-align: center; }
-    .logo { font-size: 1rem; letter-spacing: 0.3em; color: #1a7a3a; text-transform: uppercase; margin-bottom: 1.5rem; }
-    h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; }
-    h1 span { color: #1a7a3a; }
-    .tagline { font-size: 1.25rem; color: #999; margin-bottom: 2.5rem; line-height: 1.6; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
-    .card {
+    .container { max-width: 900px; }
+    header { text-align: center; margin-bottom: 3rem; }
+    .logo { font-size: 0.9rem; letter-spacing: 0.2em; color: #1a7a3a; text-transform: uppercase; margin-bottom: 1rem; }
+    h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.75rem; }
+    .tagline { font-size: 1.1rem; color: #999; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+    .projects { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 3rem; }
+    .project {
       background: #111;
       border: 1px solid #222;
-      border-radius: 8px;
-      padding: 1.25rem;
-      text-align: left;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
     }
-    .card h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: #1a7a3a; margin-bottom: 0.5rem; }
-    .card p { font-size: 0.9rem; color: #aaa; line-height: 1.5; }
-    .cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
-    .btn {
-      padding: 0.75rem 1.5rem;
+    .project:hover { transform: translateY(-4px); border-color: #1a7a3a; }
+    .project-media {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-bottom: 1px solid #222;
+      background: #000;
+    }
+    .project-content { padding: 1.5rem; }
+    .project h2 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .project p { color: #aaa; line-height: 1.6; margin-bottom: 1rem; }
+    .project-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #1a7a3a;
+      color: #fff;
       border-radius: 6px;
-      font-size: 0.95rem;
-      font-weight: 600;
       text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
       transition: opacity 0.2s;
     }
-    .btn:hover { opacity: 0.8; }
-    .btn-primary { background: #1a7a3a; color: #fff; }
-    .btn-secondary { background: #111; border: 1px solid #333; color: #ccc; }
-    footer { margin-top: 4rem; font-size: 0.8rem; color: #555; }
+    .project-link:hover { opacity: 0.8; }
+    .tech-stack { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .tech-badge {
+      padding: 0.25rem 0.6rem;
+      background: #222;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      color: #1a7a3a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    footer { text-align: center; color: #555; font-size: 0.85rem; padding-top: 2rem; border-top: 1px solid #222; width: 100%; }
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      .project-media { height: 200px; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo">Master AI</div>
-    <h1>Your machine.<br><span>Your agent.</span></h1>
-    <p class="tagline">
-      Local-first AI agent stack built on Claude. Browser automation,<br>
-      MCP integration, and multi-model routing — all running on your hardware.
-    </p>
-    <div class="grid">
-      <div class="card">
-        <h3>Local-First</h3>
-        <p>Runs on your machine. No cloud required. Ollama-powered with optional cloud escalation.</p>
+    <header>
+      <div class="logo">Elijah Wilkins</div>
+      <h1>Applied AI Engineer</h1>
+      <p class="tagline">
+        Building local-first AI agents, desktop accessibility tools, and developer workflows.
+        Based in Indianapolis, IN.
+      </p>
+    </header>
+
+    <div class="projects">
+      <div class="project">
+        <img src="ai-controller/media/demo/snapshots/snapshot_01_000000_00.png" alt="AI Controller" class="project-media">
+        <div class="project-content">
+          <h2>AI Controller</h2>
+          <p>Control your entire Linux desktop with an Xbox controller. Push-to-talk dictation, floating keyboard, mouse/scroll, and HUD overlay — built for couch use, bed use, and limited mobility.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">GTK3</span>
+            <span class="tech-badge">systemd</span>
+            <span class="tech-badge">AntiMicroX</span>
+            <span class="tech-badge">Groq Whisper</span>
+          </div>
+          <br>
+          <a href="https://github.com/ebey317/ai-controller" class="project-link">View on GitHub →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>MCP Native</h3>
-        <p>Full Model Context Protocol integration. Browser, filesystem, calendar, email — wired in.</p>
+
+      <div class="project">
+        <img src="master-ai-cli/media/demo/snapshots/snapshot_01_000000_00.png" alt="Master AI CLI" class="project-media">
+        <div class="project-content">
+          <h2>Master AI CLI</h2>
+          <p>Local-first AI agent runtime with multi-provider routing, MCP tooling, browser automation, voice/vision, subagents, and safety layer — running on your own hardware with your own API keys.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Ollama</span>
+            <span class="tech-badge">MCP</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">Chrome CDP</span>
+          </div>
+          <br>
+          <a href="https://github.com/ebey317/master-ai-cli" class="project-link">View on GitHub →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Built on Claude</h3>
-        <p>Anthropic's Claude API at the core. Smart routing between local and cloud models.</p>
+
+      <div class="project">
+        <img src="ai-controller-profile/media/demo/snapshots/snapshot_01_000000_00.png" alt="AI Controller Profile" class="project-media">
+        <div class="project-content">
+          <h2>AI Controller Profile</h2>
+          <p>Companion package with AntiMicroX profiles, Python scripts, systemd units, and voice personality configs for AI Controller.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Bash</span>
+            <span class="tech-badge">systemd</span>
+            <span class="tech-badge">edge-tts</span>
+          </div>
+          <br>
+          <a href="https://github.com/ebey317/ai-controller-profile" class="project-link">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h2>Reentry Desk</h2>
+          <p>MCP server + HTTP bridge for managing client intake and form completion across reentry programs. No database, JSON-based profiles, trivial to backup.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">FastMCP</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">JSON</span>
+          </div>
+          <br>
+          <a href="https://github.com/ebey317/reentry-desk" class="project-link">View on GitHub →</a>
+        </div>
       </div>
     </div>
-    <div class="cta">
-      <a href="https://github.com/ebey317/claf" class="btn btn-primary">View on GitHub</a>
-      <a href="mailto:ebey317@gmail.com" class="btn btn-secondary">Contact</a>
-    </div>
-    <footer>© 2026 Master AI · Indianapolis, IN · Built by Elijah Wilkins</footer>
+
+    <footer>
+      © 2026 Elijah Wilkins · Indianapolis, IN · <a href="mailto:ebey317@gmail.com" style="color: #555; text-decoration: none;">ebey317@gmail.com</a>
+    </footer>
   </div>
 </body>
 </html>
